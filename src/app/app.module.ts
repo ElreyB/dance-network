@@ -9,6 +9,12 @@ import { routing } from "./app.routing";
 
 import { AppComponent } from "./app.component";
 import { CompanyComponent } from './company/company.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
+import { CompanyDetailComponent } from './company-detail/company-detail.component';
+import { EditCompanyComponent } from './edit-company/edit-company.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddCompanyComponent } from './add-company/add-company.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -18,7 +24,7 @@ export const firebaseConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent, CompanyComponent],
+  declarations: [AppComponent, CompanyComponent, WelcomeComponent, AboutComponent, CompanyDetailComponent, EditCompanyComponent, AdminComponent, AddCompanyComponent],
   imports: [
     BrowserModule,
     FormsModule,
