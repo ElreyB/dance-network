@@ -1,22 +1,24 @@
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { CompanyComponent } from "./company/company.component";
+import { WelcomeComponent } from "./welcome/welcome.component";
 
 const appRoutes: Routes = [
-  // {
-  //   path: "",
-  //   component: WelcomeComponent
-  // },
+  {
+    path: "",
+    component: WelcomeComponent
+  }
   // {
   //   path: "add",
-  //   component: AddProjectComponent
+  //   component: AddCompanyComponent
   // },
   // {
-  //   path: "projects",
-  //   component: ProjectComponent
+  //   path: "companys",
+  //   component: CompanyComponent
   // },
   // {
-  //   path: "projects/:id",
-  //   component: ProjectDetailComponent
+  //   path: "companys/:id",
+  //   component: CompanyDetailComponent
   // },
   // {
   //   path: "admin",
