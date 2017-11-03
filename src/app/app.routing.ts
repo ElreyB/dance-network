@@ -12,14 +12,14 @@ const appRoutes: Routes = [
   {
     path: "about",
     component: AboutComponent
+  },
+  {
+    path: "companies",
+    component: CompanyComponent
   }
   // {
   //   path: "add",
   //   component: AddCompanyComponent
-  // },
-  // {
-  //   path: "companys",
-  //   component: CompanyComponent
   // },
   // {
   //   path: "companys/:id",
