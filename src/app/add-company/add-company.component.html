@@ -1,3 +1,36 @@
-<p>
-  add-company works!
-</p>
+<div class="well">
+  <form>
+    <div class="form-group">
+      <label for="company-name">New Company Name</label>
+      <input class="form-control" type="text" #newCompanyName required>
+    </div>
+
+    <div class="form-group">
+      <label for="type">New Company Style</label>
+      <input class="form-control" type="text" #newType required>
+    </div>
+
+    <div class="form-group">
+      <label for="choreographer">New Company Choreographer</label>
+      <input class="form-control" type="text" #newChoreographer required>
+    </div>
+
+    <div class="form-group">
+      <label for="company-members">New Company Members</label>
+      <input class="form-control" type="text" #newCompanyMembers required>
+    </div>
+
+    <div class="form-group">
+      <label for="about">New Company About</label>
+      <textarea class="form-control" type="text" #newAbout required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="website">New Company website</label>
+      <input class="form-control" type="text" #newWebsite required>
+    </div>
+  </form>
+  <hr>
+  <button (click)="submitNewCompany(newCompanyName.value, newType.value, newChoreographer.value, newCompanyMembers.value, newAbout.value, newWebsite.value);newCompanyName.value=''; newType.value=''; newChoreographer.value=''; newCompanyMembers.value=''; newAbout.value=''; newWebsite.value='';"
+    class="btn btn-block">Submit Company</button>
+</div>

@@ -5,6 +5,7 @@ import { WelcomeComponent } from "./welcome/welcome.component";
 import { AboutComponent } from "./about/about.component";
 import { CompanyDetailComponent } from "./company-detail/company-detail.component";
 import { AdminComponent } from "./admin/admin.component";
+import { AddCompanyComponent } from "./add-company/add-company.component";
 
 const appRoutes: Routes = [
   {
@@ -26,11 +27,11 @@ const appRoutes: Routes = [
   {
     path: "admin",
     component: AdminComponent
+  },
+  {
+    path: "add",
+    component: AddCompanyComponent
   }
-  // {
-  //   path: "add",
-  //   component: AddCompanyComponent
-  // },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
