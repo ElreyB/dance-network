@@ -3,7 +3,7 @@ export class Company {
     public companyName: string,
     public type: string,
     public choreographer: string,
-    public companyMembers: string,
+    public companyMembers: string[],
     public about: string,
     public website: string
   ) {}

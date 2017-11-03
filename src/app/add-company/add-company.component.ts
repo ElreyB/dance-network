@@ -27,7 +27,7 @@ export class AddCompanyComponent implements OnInit {
       companyName,
       type,
       choreographer,
-      companyMembers.split(", "),
+      companyMembers.split(","),
       about,
       website
     );
