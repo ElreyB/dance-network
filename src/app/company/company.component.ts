@@ -12,6 +12,7 @@ import { FirebaseListObservable } from "angularfire2/database";
 })
 export class CompanyComponent implements OnInit {
   companies: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private companyService: CompanyService) {}
 

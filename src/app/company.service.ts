@@ -24,4 +24,21 @@ export class CompanyService {
   getCompanyById(companyId: string) {
     return this.database.object("companies/" + companyId);
   }
+
+  updateCompany(localUpdateCompany) {
+    let companyEntryInFirebase = this.getCompanyById(localUpdateCompany.$key);
+    companyEntryInFirebase.update({
+      companyName: localUpdateCompany.companyName,
+      type: localUpdateCompany.type,
+      choreographer: localUpdateCompany.choreographer,
+      companyMembers: localUpdateCompany.companyMembers,
+      about: localUpdateCompany.about,
+      website: localUpdateCompany.website
+    });
+  }
+
+  deleteCompany(localCompanyToDelete) {
+    let companyEntryInFirebase = this.getCompanyById(localCompanyToDelete.$key);
+    companyEntryInFirebase.remove();
+  }
 }

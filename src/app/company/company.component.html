@@ -1,4 +1,12 @@
 <div *ngFor="let company of companies | async" class="well">
   <h4 (click)="goToCompanyPage(company)">{{company.companyName}}</h4>
-
+  <div *ngIf="currentRoute === '/admin'">
+    <h4>{{company.type}}</h4>
+    <h4>{{company.choreographer}}</h4>
+    <h4 *ngFor="let member of company.companyMembers">{{member}}</h4>
+    <h4>{{company.about}}</h4>
+    <h4>{{company.website}}</h4>
+    <hr>
+    <app-edit-company [selectedCompany]="company"></app-edit-company>
+  </div>
 </div>

@@ -1,3 +1,37 @@
-<p>
-  edit-company works!
-</p>
+<form>
+  <div class="form-group">
+    <label for="edit-company-name">Edit Company Name</label>
+    <input class="form-control" type="text" [(ngModel)]="selectedCompany.companyName" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="edit-type">Edit Company Style</label>
+    <input class="form-control" type="text" [(ngModel)]="selectedCompany.type" name="type" required>
+  </div>
+
+  <div class="form-group">
+    <label for="edit-choreographer">Edit Company Choreographer</label>
+    <input class="form-control" type="text" [(ngModel)]="selectedCompany.choreographer" name="choreographer" required>
+  </div>
+
+  <div class="form-group">
+    <label for="edit-company-members">Edit Company Members</label>
+    <div>
+      <input class="form-control" type="text" [(ngModel)]="selectedCompany.companyMembers" name="members" required>
+      <br>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="edit-about">Edit Company About</label>
+    <textarea class="form-control" type="text" [(ngModel)]="selectedCompany.about" name="about" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="edit-website">Edit Company website</label>
+    <input class="form-control" type="text" [(ngModel)]="selectedCompany.website" name="website" required>
+  </div>
+
+  <button (click)="beginUpdatingCompany(selectedCompany)" class="btn">Update Company</button>
+  <button (click)="beginDeletingCompany(selectedCompany)" class="btn">Delete Company</button>
+</form>
