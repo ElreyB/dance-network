@@ -28,7 +28,7 @@ export class EditCompanyComponent implements OnInit {
     }
   }
 
-  // trackByIndex(index: number, obj: any): any {
-  //   return index;
-  // }
+  trackByIndex(index: number, obj: any): any {
+    return index;
+  }
 }
