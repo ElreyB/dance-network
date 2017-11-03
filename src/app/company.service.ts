@@ -22,6 +22,6 @@ export class CompanyService {
   }
 
   getCompanyById(companyId: string) {
-    return this.database.object("company/" + companyId);
+    return this.database.object("companies/" + companyId);
   }
 }

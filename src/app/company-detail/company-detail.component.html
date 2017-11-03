@@ -1,3 +1,11 @@
-<p>
-  company-detail works!
-</p>
+<div class=well>
+  <div class="page-header">
+    <h1>{{(companyToDisplay | async ).companyName}}
+      <small>{{(companyToDisplay | async ).type}}</small>
+    </h1>
+  </div>
+  <p>{{(companyToDisplay | async ).choreographer}}</p>
+  <p *ngFor="let member of (companyToDisplay | async ).companyMembers">{{member}} </p>
+  <p>{{(companyToDisplay | async ).about}}</p>
+  <p>{{(companyToDisplay | async ).website}}</p>
+</div>

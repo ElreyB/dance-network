@@ -1,4 +1,4 @@
 <div *ngFor="let company of companies | async" class="well">
-  <h4 (click)="goToCompanyPage">{{company.companyName}}</h4>
+  <h4 (click)="goToCompanyPage(company)">{{company.companyName}}</h4>
 
 </div>

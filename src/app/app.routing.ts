@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { CompanyComponent } from "./company/company.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { AboutComponent } from "./about/about.component";
+import { CompanyDetailComponent } from "./company-detail/company-detail.component";
 
 const appRoutes: Routes = [
   {
@@ -16,14 +17,14 @@ const appRoutes: Routes = [
   {
     path: "companies",
     component: CompanyComponent
+  },
+  {
+    path: "companies/:id",
+    component: CompanyDetailComponent
   }
   // {
   //   path: "add",
   //   component: AddCompanyComponent
-  // },
-  // {
-  //   path: "companys/:id",
-  //   component: CompanyDetailComponent
   // },
   // {
   //   path: "admin",
