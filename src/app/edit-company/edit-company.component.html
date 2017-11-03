@@ -16,8 +16,9 @@
 
   <div class="form-group">
     <label for="edit-company-members">Edit Company Members</label>
-    <div>
-      <input class="form-control" type="text" [(ngModel)]="selectedCompany.companyMembers" name="members" required>
+    <div *ngFor="let member of selectedCompany.companyMembers; let i = index; trackBy:trackByIndex;">
+      <p>{{i}}-{{selectedCompany.companyMembers[i]}}</p>
+      <input class="form-control" type="text" [(ngModel)]="selectedCompany.companyMembers[i]" name="members{{i}}" required>
       <br>
     </div>
   </div>
