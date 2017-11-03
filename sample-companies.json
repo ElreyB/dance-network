@@ -1,0 +1,54 @@
+{
+  "componies": [
+    {
+      "companyName": "Spectrum Dance Theater",
+      "type": "Modern",
+      "choreographer": "Donald Byrd",
+      "companyMemebers": [
+        "Alexander Pham",
+        "Emily Pihlaja",
+        "Andrew Pontius",
+        "Fausto Rivera",
+        "Mary Sigward",
+        "Lena Silverman",
+        "Jaclyn Wheatley"
+      ],
+      "about":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.",
+      "website": "https://spectrumdance.org/"
+    },
+    {
+      "companyName": "Whim W'Him",
+      "type": "Contemporary",
+      "choreographer": "Olivier Wevers",
+      "companyMemebers": [
+        "Liane Aung",
+        "Cameron Birts",
+        "Adrian Hoffman",
+        "Jim Kent",
+        "Mia Monteabaro",
+        "Tory Peil",
+        "Karl Waston"
+      ],
+      "about":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.",
+      "website": "http://www.whimwhim.org/"
+    },
+    {
+      "companyName": "Dance Jenkins Dance",
+      "type": "Modern",
+      "choreographer": "Shirley Jenkins",
+      "companyMemebers": [
+        "Taylor Augustine",
+        "Amie Baca",
+        "Holly Batt",
+        "Naphtali Beyleveld",
+        "Carrie Dossick",
+        "Belle Wolf"
+      ],
+      "about":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora quos vel, earum a, deleniti at voluptatibus, amet quis quibusdam quia voluptates explicabo repellat? Nisi repudiandae minus cumque eos dolore.",
+      "website": "https://spectrumdance.org/"
+    }
+  ]
+}
