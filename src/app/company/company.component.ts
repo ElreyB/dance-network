@@ -13,6 +13,8 @@ import { FirebaseListObservable } from "angularfire2/database";
 export class CompanyComponent implements OnInit {
   companies: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByType: string = "allCompanies";
+  filterByName: string = "allCompanies";
 
   constructor(private router: Router, private companyService: CompanyService) {}
 
@@ -22,5 +24,13 @@ export class CompanyComponent implements OnInit {
 
   goToCompanyPage(clickedProject) {
     this.router.navigate(["companies", clickedProject.$key]);
+  }
+
+  onChangeType(optionFromSelect) {
+    this.filterByType = optionFromSelect;
+  }
+
+  onChangeName(optionFromSelect) {
+    this.filterByName = optionFromSelect;
   }
 }

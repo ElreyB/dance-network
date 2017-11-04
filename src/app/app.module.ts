@@ -8,13 +8,15 @@ import { AngularFireDatabaseModule } from "angularfire2/database";
 import { routing } from "./app.routing";
 
 import { AppComponent } from "./app.component";
-import { CompanyComponent } from './company/company.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent } from './about/about.component';
-import { CompanyDetailComponent } from './company-detail/company-detail.component';
-import { EditCompanyComponent } from './edit-company/edit-company.component';
-import { AdminComponent } from './admin/admin.component';
-import { AddCompanyComponent } from './add-company/add-company.component';
+import { CompanyComponent } from "./company/company.component";
+import { WelcomeComponent } from "./welcome/welcome.component";
+import { AboutComponent } from "./about/about.component";
+import { CompanyDetailComponent } from "./company-detail/company-detail.component";
+import { EditCompanyComponent } from "./edit-company/edit-company.component";
+import { AdminComponent } from "./admin/admin.component";
+import { AddCompanyComponent } from "./add-company/add-company.component";
+import { TypePipe } from "./type.pipe";
+import { NamePipe } from "./name.pipe";
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +26,18 @@ export const firebaseConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent, CompanyComponent, WelcomeComponent, AboutComponent, CompanyDetailComponent, EditCompanyComponent, AdminComponent, AddCompanyComponent],
+  declarations: [
+    AppComponent,
+    CompanyComponent,
+    WelcomeComponent,
+    AboutComponent,
+    CompanyDetailComponent,
+    EditCompanyComponent,
+    AdminComponent,
+    AddCompanyComponent,
+    TypePipe,
+    NamePipe
+  ],
   imports: [
     BrowserModule,
     FormsModule,
