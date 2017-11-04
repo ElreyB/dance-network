@@ -20,6 +20,14 @@ export class EditCompanyComponent implements OnInit {
     this.router.navigate(["componies"]);
   }
 
+  beginAddingMembers(companyToUpdate, membersToAdd) {
+    let membersList = membersToAdd.split(",");
+    membersList.forEach(member => {
+      companyToUpdate.companyMembers.push(member);
+    });
+    this.companyService.updateCompany(companyToUpdate);
+  }
+
   beginDeletingCompany(companyToDelete) {
     if (
       confirm("Are you sure you want to delete this company from company list?")

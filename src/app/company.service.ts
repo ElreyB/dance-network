@@ -21,6 +21,13 @@ export class CompanyService {
     this.companies.push(newCompany);
   }
 
+  // addToCompanyMembers(companyToUpdateMembers, companyMembers) {
+  //   let companyEntryInFirebase = this.getCompanyById(
+  //     companyToUpdateMembers.$key
+  //   );
+  //   companyEntryInFirebase.companyMembers.forEach(member);
+  // }
+
   getCompanyById(companyId: string) {
     return this.database.object("companies/" + companyId);
   }

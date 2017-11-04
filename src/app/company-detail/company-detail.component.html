@@ -5,8 +5,10 @@
       <small>{{(companyToDisplay | async ).type}}</small>
     </h1>
   </div>
-  <h4>Director/Choreographer:</h4>
-  <p>{{(companyToDisplay | async ).choreographer}}</p>
+  <div class="text-center">
+    <h4>Director/Choreographer:</h4>
+    <p>{{(companyToDisplay | async ).choreographer}}</p>
+  </div>
   <h4>Company Members</h4>
   <div class="row">
     <p *ngFor="let member of (companyToDisplay | async ).companyMembers" class="col-md-3">{{member}} </p>
