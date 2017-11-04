@@ -4,13 +4,17 @@
       <a class="navbar-brand" routerLink="">Dance Network</a>
     </div>
     <ul class="nav navbar-nav navbar-left">
-      <li>
+      <li *ngIf="isLoggedIn">
         <a routerLink="companies">Companies</a>
       </li>
       <li>
         <a routerLink="about">About</a>
       </li>
+      <li *ngIf="!isLoggedIn">
+        <a>Log in to view componies list</a>
+      </li>
     </ul>
+
     <ul class="nav navbar-nav navbar-right">
       <li *ngIf="isLoggedIn">
         <a>{{userName}}</a>
@@ -30,7 +34,7 @@
 
 
 <footer>
-  <div class="container">
+  <div class="container" *ngIf="isLoggedIn">
     <a class="text-muted" routerLink="admin">Admin</a>
   </div>
 </footer>
