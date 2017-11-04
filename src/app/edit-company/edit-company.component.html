@@ -14,10 +14,9 @@
     <input class="form-control" type="text" [(ngModel)]="selectedCompany.choreographer" name="choreographer" required>
   </div>
 
-  <div class="form-group">
-    <label for="edit-company-members">Edit Company Members</label>
-    <div *ngFor="let member of selectedCompany.companyMembers; let i = index; trackBy:trackByIndex;">
-      <p>{{i}}-{{selectedCompany.companyMembers[i]}}</p>
+  <label for="edit-company-members">Edit Company Members</label>
+  <div class="form-group row">
+    <div *ngFor="let member of selectedCompany.companyMembers; let i = index; trackBy:trackByIndex;" class="col-xs-3">
       <input class="form-control" type="text" [(ngModel)]="selectedCompany.companyMembers[i]" name="members{{i}}" required>
       <br>
     </div>
