@@ -9,4 +9,13 @@ footer {
 
 .container {
   margin-bottom: 60px;
+  color: white;
+}
+
+body {
+  background-image: url("assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
