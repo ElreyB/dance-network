@@ -21,7 +21,7 @@ export class EditCompanyComponent implements OnInit {
   }
 
   beginAddingMembers(companyToUpdate, membersToAdd) {
-    let membersList = membersToAdd.split(",");
+    let membersList = membersToAdd.split(/\s*,\s*/);
     membersList.forEach(member => {
       companyToUpdate.companyMembers.push(member);
     });
@@ -34,6 +34,11 @@ export class EditCompanyComponent implements OnInit {
     ) {
       this.companyService.deleteCompany(companyToDelete);
     }
+  }
+
+  beginDeletingCompanyMember(companyToUpdate, memberToDeleteIndex) {
+    companyToUpdate.companyMembers.splice(memberToDeleteIndex, 1);
+    this.companyService.updateCompany(companyToUpdate);
   }
 
   trackByIndex(index: number, obj: any): any {
