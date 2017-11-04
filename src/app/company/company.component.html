@@ -3,7 +3,9 @@
   <div *ngIf="currentRoute === '/admin'">
     <h4>{{company.type}}</h4>
     <h4>{{company.choreographer}}</h4>
-    <h4 *ngFor="let member of company.companyMembers">{{member}}</h4>
+    <div class="row">
+      <h4 *ngFor="let member of company.companyMembers" class="col-xs-3">{{member}}</h4>
+    </div>
     <h4>{{company.about}}</h4>
     <h4>{{company.website}}</h4>
     <hr>

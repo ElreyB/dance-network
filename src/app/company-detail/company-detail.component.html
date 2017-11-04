@@ -5,7 +5,9 @@
     </h1>
   </div>
   <p>{{(companyToDisplay | async ).choreographer}}</p>
-  <p *ngFor="let member of (companyToDisplay | async ).companyMembers">{{member}} </p>
+  <div class="row">
+    <p *ngFor="let member of (companyToDisplay | async ).companyMembers" class="col-md-3">{{member}} </p>
+  </div>
   <p>{{(companyToDisplay | async ).about}}</p>
   <a [href]="(companyToDisplay | async ).website">
     <p>{{(companyToDisplay | async ).companyName}}</p>
