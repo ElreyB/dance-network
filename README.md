@@ -20,7 +20,7 @@ _The concept for the app is a central location to Seattle dance companies basic 
 * Log in with Google credentials.
 * Click get started button.
 * Click Add Project button.
-* In project name field enter ```club-manager```
+* In project name field enter ```dance-network```
 * Click create project button.
 * In terminal, in root directory, enter ```touch src/app/api-keys.ts```
 * Open project with text editor of choice
@@ -44,14 +44,14 @@ export var masterFirebaseConfig = {
 * Click Data button in navbar.
 * Click on triple ... button on right side of gray box in the middle of the screen.
 * Select import JSON.
-* Select browse and navigate to project folder. Select the sample-users.json file and click blue import button.
+* Select browse and navigate to project folder. Select the sample-companies.json file and click blue import button.
 * Back in the terminal (you should still be in the root directory of the project folder) run the following:  ``` $ ng serve ```
 * Navigate to ```localhost:4200``` in web browser of choice
 
 
 ## Known Bugs 🐛🐛🐛
 
-* _When you edit a company's members it stores the the information as a string instead of an array. Because of this it will not display the members name. Will be fixing bug soon._
+No known bugs
 
 ## Support and contact details
 
