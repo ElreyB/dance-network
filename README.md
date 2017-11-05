@@ -31,6 +31,9 @@ _If they click on admin at the bottom of the page they will be able add and edit
 
 _When editing user can filter by company name_
 
+![company-name](https://user-images.githubusercontent.com/20192033/32411294-719c7dee-c194-11e7-97b6-609e1d1df186.png)
+
+
 [Dance Network](https://dance-network.firebaseapp.com/)
 
 
@@ -77,7 +80,7 @@ export var masterFirebaseConfig = {
 
 ## Known Bugs 🐛🐛🐛
 
-No known bugs
+* Amyone can access the admin page
 
 ## Support and contact details
 
@@ -109,10 +112,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Future functionality
-* Add functionality to show reviews on companies
-* Deploy your application. Include a link to the live site in your project's README.
-* AngularFire/Firebase user authentication
-* Filter companies by type
+* Add photos for companies
+* Setup a login and logout component
+* Only allow adim to user admin pages
+
 
 ## Technologies Used
 
