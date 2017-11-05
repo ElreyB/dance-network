@@ -17,7 +17,7 @@ export class EditCompanyComponent implements OnInit {
 
   beginUpdatingCompany(companyToUpdate) {
     this.companyService.updateCompany(companyToUpdate);
-    this.router.navigate(["componies"]);
+    this.router.navigate(["companies"]);
   }
 
   beginAddingMembers(companyToUpdate, membersToAdd) {
@@ -33,6 +33,7 @@ export class EditCompanyComponent implements OnInit {
       confirm("Are you sure you want to delete this company from company list?")
     ) {
       this.companyService.deleteCompany(companyToDelete);
+      this.router.navigate(["companies"]);
     }
   }
 

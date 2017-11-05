@@ -1,8 +1,10 @@
 <div *ngIf="currentRoute === '/admin' else userBlock">
-  <select (change)="onChangeName($event.target.value)" class="form-control-lg">
-    <option value="allCompanies">All Companies</option>
-    <option *ngFor="let company of companies | async" value={{company.companyName}}>{{company.companyName}}</option>
-  </select>
+  <div class="text-center">
+    <select (change)="onChangeName($event.target.value)" class="form-control-lg">
+      <option value="allCompanies">All Companies</option>
+      <option *ngFor="let company of companies | async" value={{company.companyName}}>{{company.companyName}}</option>
+    </select>
+  </div>
 </div>
 
 <ng-template #userBlock>
@@ -20,13 +22,16 @@
 
 <div *ngIf="currentRoute === '/admin' else otherUserBlock">
   <div *ngFor="let company of companies | async | name:filterByName" class="well">
-    <h4 (click)="goToCompanyPage(company)">{{company.companyName}}</h4>
-    <h4>{{company.type}}</h4>
-    <h4>{{company.choreographer}}</h4>
+    <h3 (click)="goToCompanyPage(company)">{{company.companyName}}
+      <small>{{company.type}}</small>
+    </h3>
+    <h4>Director/Choreographer: {{company.choreographer}}</h4>
     <div class="row">
       <h4 *ngFor="let member of company.companyMembers" class="col-xs-3">{{member}}</h4>
     </div>
-    <h4>{{company.about}}</h4>
+    <hr>
+    <p>{{company.about}}</p>
+    <hr>
     <h4>{{company.website}}</h4>
     <hr>
     <app-edit-company [selectedCompany]="company"></app-edit-company>

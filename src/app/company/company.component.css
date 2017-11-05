@@ -7,7 +7,10 @@ select {
   margin-bottom: 10px;
 }
 
-h4 {
+h3 {
   text-align: center;
   font-size: 40px;
+}
+h4 {
+  text-align: center;
 }
