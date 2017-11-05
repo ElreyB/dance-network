@@ -9,7 +9,9 @@
     <h4>Director/Choreographer:</h4>
     <p>{{(companyToDisplay | async ).choreographer}}</p>
   </div>
-  <h4>Company Members</h4>
+  <hr>
+  <h4>Company Members:</h4>
+  <br>
   <div class="row">
     <p *ngFor="let member of (companyToDisplay | async ).companyMembers" class="col-md-3">{{member}} </p>
   </div>
