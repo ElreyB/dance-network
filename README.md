@@ -6,7 +6,7 @@
 
 ## Description
 
-_The concept for the app is a central location to Seattle dance companies basic information._
+_The concept for the app is a central location for Seattle dancer to see basic information about dance companies in Seattle. You can go to the site [here](https://dance-network.firebaseapp.com/) or follow the steps below to install on your on computer._
 
 ## Setup/Installation Requirements
 
