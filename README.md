@@ -124,6 +124,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * _CSS_
 * _Node_
 * _JavaScript_
+* _Bootstrap_
 
 ## Contributors
 
