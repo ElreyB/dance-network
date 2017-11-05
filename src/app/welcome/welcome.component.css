@@ -2,3 +2,7 @@ img {
   width: 277px;
   height: 277px;
 }
+
+.jumbotron {
+  background-color: black;
+}
