@@ -1,18 +1,20 @@
 <div *ngIf="currentRoute === '/admin' else userBlock">
-  <select (change)="onChangeName($event.target.value)">
+  <select (change)="onChangeName($event.target.value)" class="form-control-lg">
     <option value="allCompanies">All Companies</option>
     <option *ngFor="let company of companies | async" value={{company.companyName}}>{{company.companyName}}</option>
   </select>
 </div>
 
 <ng-template #userBlock>
-  <select (change)="onChangeType($event.target.value)">
-    <option value="allCompanies">All Companies</option>
-    <option value="modern">Modern</option>
-    <option value="jazz">Jazz</option>
-    <option value="ballet">Ballet</option>
-    <option value="contemporary">Contemporary</option>
-  </select>
+  <div class="text-center">
+    <select (change)="onChangeType($event.target.value)" class="form-control-lg">
+      <option value="allCompanies">All Companies</option>
+      <option value="modern">Modern</option>
+      <option value="jazz">Jazz</option>
+      <option value="ballet">Ballet</option>
+      <option value="contemporary">Contemporary</option>
+    </select>
+  </div>
 </ng-template>
 
 
