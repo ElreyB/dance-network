@@ -6,7 +6,36 @@
 
 ## Description
 
-_The concept for the app is a central location to Seattle dance companies basic information._
+![home](https://user-images.githubusercontent.com/20192033/32411256-63f185aa-c193-11e7-9413-d8057ab4cbba.png)
+
+_The concept for the app is a central location for Seattle dancer to see basic information about dance companies in Seattle.You can go to the site [here](https://dance-network.firebaseapp.com/) or follow the steps in the 'Setup' section to install on your on computer._
+
+_The user will be able to the following:_
+_Log in and out using a Google account_
+
+![login](https://user-images.githubusercontent.com/20192033/32411257-64128700-c193-11e7-8d68-e4e1a43ee0a3.png)
+
+![logout](https://user-images.githubusercontent.com/20192033/32411258-6448214e-c193-11e7-9800-bcdf5f8560fd.png)
+
+_Go to an about page_
+
+![about](https://user-images.githubusercontent.com/20192033/32411251-6351b16a-c193-11e7-9c49-9c634d5db7f5.png)
+
+_Fitler companies by type_
+
+![select-type](https://user-images.githubusercontent.com/20192033/32411259-645fc7a4-c193-11e7-9e90-a061aaa5b2a5.png)
+
+_If they click on admin at the bottom of the page they will be able add and edit companies_
+
+![admin](https://user-images.githubusercontent.com/20192033/32411253-63948d8c-c193-11e7-8f05-907b3ed42805.png)
+
+_When editing user can filter by company name_
+
+![company-name](https://user-images.githubusercontent.com/20192033/32411294-719c7dee-c194-11e7-97b6-609e1d1df186.png)
+
+
+[Dance Network](https://dance-network.firebaseapp.com/)
+
 
 ## Setup/Installation Requirements
 
@@ -51,7 +80,7 @@ export var masterFirebaseConfig = {
 
 ## Known Bugs 🐛🐛🐛
 
-No known bugs
+* Amyone can access the admin page
 
 ## Support and contact details
 
@@ -83,10 +112,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Future functionality
-* Add functionality to show reviews on companies
-* Deploy your application. Include a link to the live site in your project's README.
-* AngularFire/Firebase user authentication
-* Filter companies by type
+* Add photos for companies
+* Setup a login and logout component
+* Only allow adim to user admin pages
+
 
 ## Technologies Used
 
@@ -95,6 +124,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * _CSS_
 * _Node_
 * _JavaScript_
+* _Bootstrap_
 
 ## Contributors
 

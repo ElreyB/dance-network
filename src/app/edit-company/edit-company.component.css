@@ -1,0 +1,22 @@
+.input-group-addon {
+  font-size: 20px;
+  font-weight: bold;
+}
+.input-group-addon,
+.delete {
+  background-color: #771c1c;
+}
+
+#basic-addon3,
+.update {
+  background-color: #14821d;
+}
+
+.input-group-addon,
+#basic-addon3 {
+  color: black;
+}
+
+.delete {
+  float: right;
+}

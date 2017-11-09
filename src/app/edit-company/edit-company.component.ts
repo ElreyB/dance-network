@@ -17,7 +17,15 @@ export class EditCompanyComponent implements OnInit {
 
   beginUpdatingCompany(companyToUpdate) {
     this.companyService.updateCompany(companyToUpdate);
-    this.router.navigate(["componies"]);
+    this.router.navigate(["companies"]);
+  }
+
+  beginAddingMembers(companyToUpdate, membersToAdd) {
+    let membersList = membersToAdd.split(/\s*,\s*/);
+    membersList.forEach(member => {
+      companyToUpdate.companyMembers.push(member);
+    });
+    this.companyService.updateCompany(companyToUpdate);
   }
 
   beginDeletingCompany(companyToDelete) {
@@ -25,7 +33,13 @@ export class EditCompanyComponent implements OnInit {
       confirm("Are you sure you want to delete this company from company list?")
     ) {
       this.companyService.deleteCompany(companyToDelete);
+      this.router.navigate(["companies"]);
     }
+  }
+
+  beginDeletingCompanyMember(companyToUpdate, memberToDeleteIndex) {
+    companyToUpdate.companyMembers.splice(memberToDeleteIndex, 1);
+    this.companyService.updateCompany(companyToUpdate);
   }
 
   trackByIndex(index: number, obj: any): any {

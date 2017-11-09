@@ -1,18 +1,37 @@
 <div class="well">
+  <div>
+    <h3>Fill out form to add company to list</h3>
+  </div>
+  <hr>
   <form>
-    <div class="form-group">
-      <label for="company-name">New Company Name</label>
-      <input class="form-control" type="text" #newCompanyName required>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="company-name">New Company Name</label>
+          <input class="form-control" type="text" #newCompanyName required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="type">New Company Style</label>
+          <input class="form-control" type="text" #newType required>
+        </div>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="type">New Company Style</label>
-      <input class="form-control" type="text" #newType required>
-    </div>
-
-    <div class="form-group">
-      <label for="choreographer">New Company Choreographer</label>
-      <input class="form-control" type="text" #newChoreographer required>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="choreographer">New Company Choreographer</label>
+          <input class="form-control" type="text" #newChoreographer required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="website">New Company website</label>
+          <input class="form-control" type="text" #newWebsite required>
+        </div>
+      </div>
     </div>
 
     <div class="form-group">
@@ -22,13 +41,10 @@
 
     <div class="form-group">
       <label for="about">New Company About</label>
-      <textarea class="form-control" type="text" #newAbout required></textarea>
+      <textarea class="form-control" type="text" #newAbout rows="10" required></textarea>
     </div>
 
-    <div class="form-group">
-      <label for="website">New Company website</label>
-      <input class="form-control" type="text" #newWebsite required>
-    </div>
+
   </form>
   <hr>
   <button (click)="submitNewCompany(newCompanyName.value, newType.value, newChoreographer.value, newCompanyMembers.value, newAbout.value, newWebsite.value);newCompanyName.value=''; newType.value=''; newChoreographer.value=''; newCompanyMembers.value=''; newAbout.value=''; newWebsite.value='';"

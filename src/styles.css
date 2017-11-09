@@ -5,8 +5,18 @@ footer {
   height: 60px;
   background-color: #f5f5f5;
   padding: 15px;
+  z-index: 9999;
 }
 
 .container {
   margin-bottom: 60px;
+  color: white;
+}
+
+body {
+  background-image: url("assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
