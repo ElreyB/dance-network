@@ -119,12 +119,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Technologies Used
 
-* _Angular 2_
-* _HTML_
-* _CSS_
-* _Node_
-* _JavaScript_
-* _Bootstrap_
+* _[Angular 2](https://angular.io/)_
+* _[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)_
+* _[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)_
+* _[Node](https://nodejs.org/en/)_
+* _[JavaScript](https://www.javascript.com/)_
+* _[Bootstrap](https://getbootstrap.com/)_
 
 ## Contributors
 
